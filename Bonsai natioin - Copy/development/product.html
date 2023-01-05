@@ -35,6 +35,8 @@
 
 
       }
+	  
+
     	
     	
 
@@ -82,6 +84,30 @@
         text-align: center;
         font-family: Courier New;
       }
+
+	  .notify {
+		background-color: grey;
+		color: white;
+		padding: 15px 26px;
+		position: absolute;
+		display: inline-block;
+		border-radius: 2px;
+			
+	  }
+
+	  .notify:hover {
+		background: black;
+	  }
+
+	  .notify .badge {
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		padding: 5px 10px;
+		border-radius: 50%;
+		background-color: red;
+		color: white;
+	  }
     	
 
 		
@@ -113,15 +139,25 @@
             </div>
   	</div>
 
+	<!--Inbox notification-->
+	<div class="notify">
+		<span>Inbox</span>
+		<span class="badge">0</span>
+	</div>
   	<h1 style="text-align: center">Our Products</h1><br><br>
+	  
     <div class="img-container">
       <div class="text">
         OUR PRODUCTS
       </div>
     </div><br><br>
 
+	
+
     <h2 id="greet" class="pro"></h3><br><br><br> 
+		
     <h2 class="pro">Please Check Our Products</h2>
+
 
   	<div class="row">
   		<div class="firstcolumn">
