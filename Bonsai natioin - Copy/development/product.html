@@ -88,10 +88,12 @@
 	  .notify {
 		background-color: grey;
 		color: white;
-		padding: 15px 26px;
+		padding: 22px 26px;
 		position: absolute;
 		display: inline-block;
 		border-radius: 2px;
+		margin-top: 5px;
+		margin-bottom: 5px;
 			
 	  }
 
@@ -140,8 +142,8 @@
   	</div>
 
 	<!--Inbox notification-->
-	<div class="notify">
-		<span>Inbox</span>
+	<div class="notify" onclick="inbox()">
+		<span style="font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Inbox</span>
 		<span class="badge">0</span>
 	</div>
   	<h1 style="text-align: center">Our Products</h1><br><br>
@@ -221,6 +223,10 @@
         greeting = "Good evening!";
       }
       document.getElementById("greet").innerHTML = greeting;
+
+	  function inbox(){
+		alert("Nothing at the moment. Check again later");
+	  }
 
 
 
