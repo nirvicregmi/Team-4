@@ -1,0 +1,313 @@
+<!DOCTYPE html> <!--comment-->>
+<html>
+    <head>
+        <meta name="decription" content="BonsaiNation Home Page">
+        <meta name="keywords" content="Bonsai Plant, Ecommerce Website">
+        <meta name="author" content="">
+
+        <title>BonsaiNation</title>
+        <link rel="stylesheet" href="style.css"> <!--Linking with style.css-->
+        <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+        <style type="text/css">
+
+            p
+            {
+                color: #555;
+            }
+            
+            
+            .column-1 .column-2
+            {
+                flex-basis: 50%;
+                min-width: 300px;
+            }
+            .column-2 img
+            {
+                
+                padding: 50px 0;
+
+            }
+            .column-1 h1
+            {
+                font-size: 40px;
+                line-height: 60px;
+                margin: 25px 0;
+            }
+            .button
+            {
+                display: inline-block;
+                background: #97ded9;
+                color: white-space;
+                padding: 8px 30px;
+                margin: 30px 0;
+                border-radius: 30px;
+            }
+            .button:hover
+            {
+                background: #e84f57;
+            }
+            
+            
+            .header .row
+            {
+                margin-top: 70px;
+
+            }
+            .categories
+            {
+                margin: 70px 0;
+            }
+            .column
+            {
+                flex-basis: 30%;
+                min-width: 250px;
+                margin-bottom: 30px;
+            }
+            .column img
+            {
+                width: 100%;
+            }
+            .innercategories
+            {
+                max-width: 1080px;
+                margin: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            .column-3
+            {
+                flex-basis: 25%;
+                padding: 10px;
+                min-width: 200px;
+                margin-bottom: 50px;
+                transition: transform 0.5s;
+            }
+
+
+            .column-3 img 
+            {
+                width: 100%;
+                height: 250px;
+            }
+            h4
+            {
+                color: #555;
+                font-weight: normal;
+                text-align: center;
+            }
+            .column-3 p
+            {
+                font-size: 14px;
+                text-align: center;
+            }
+            .column-3:hover
+            {
+                transform: translateY(-5px);
+            }
+            .offer
+            {
+                background: radial-gradient(#fff,#ffd6d6);
+                margin-top: 80px;
+                padding: 30px 0;
+            }
+            .column-3 .offer{
+                padding: 50px;
+            }
+            small{
+                color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="header">
+            <!--Division for Navigation bar, Writing some texts and a image-->
+            <div class="box">
+                <!--Division for navigation bar-->
+                <div class="navbar">
+
+                    <!--Division for Website Logo in navigation bar-->
+                    <div class="icon">
+                        <a href="index.html"><img src="images/logo.jpeg" alt="Website logo" width="125px"></a>
+                    </div>
+                    <nav>
+                        <!--Using unordered list in navigation bar-->
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">References</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+
+                
+                </div>
+
+                <!--Division for Writing Text and Inserting a image-->
+                <div class="row">
+                    <!--Division for Writing text and add button that links to product page-->
+                    <div class="column-1">
+                        <h1>Beauty Within A Confined Space!</h1>
+                        <p>The object is not to make the tree look like a bonsai, <br> but to make the bonsai look like a tree.</p>
+                        <a href="product.html" class="button">All Products &#9755;</a> 
+
+                    </div>
+
+                    <!--Division for image slider-->
+                    <div class="slider">
+                        <div class="column-2" id="img">
+                            <img src="images/homepic.jpg" alt="Bonsai Plant Picture">
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+    </div>
+
+    <!--Division for inserting images-->
+    <div class="categories">
+        <div class="innercategories">
+            <div class="row">
+                <div class="column">
+                    <img src="images/beauty.jpg" height="200px">
+                </div>
+                <div class="column">
+                    <img src="images/chinese.jpg" height="200px">
+                </div>
+                <div class="column">
+                    <img src="images/japanese.jpg" height="200px">
+                </div>
+            </div>
+    
+    
+        </div>
+        
+
+
+    </div>
+
+    <!--division for adding featured products-->
+    <div class="innercategories">
+        <h2 style="text-align: center; color: #555;">Featured Products</h2>
+        <div class="row">
+            <div class="column-3">
+                <img src="images/featured1.jpg" alt="first featured product">
+                <h4>Green Ficus Bonsai</h4>
+                <p>Rs 200</p>
+        
+            </div>
+            <div class="column-3">
+                <img src="images/featured2.jpg" alt="second featured product">
+                <h4>Green Paradise</h4>
+                <p>Rs 600</p>
+        
+            </div>
+            <div class="column-3">
+                <img src="images/featured3.jpg" alt="third featured product">
+                <h4>Banyan Bonsai Tree</h4>
+                <p>Rs 32000</p>
+        
+            </div>
+            <div class="column-3">
+                <img src="images/featured4.jpg" alt="fourth featured product">
+                <h4>Chinese Orange Plant</h4>
+                <p>Rs 99</p>
+        
+            </div>
+        </div>
+        <!--New Products-->
+        <h2>New Products</h2>
+
+        <!--Division for new products-->
+        <div class="row">
+            <div class="column-3">
+                <img src="images/new1.webp" alt="first new product">
+                <h4>Snake Plant</h4>
+                <p>Rs 199</p>
+        
+            </div>
+            <div class="column-3">
+                <img src="images/new2.webp" alt="second new product">
+                <h4>Apple Bonsai Plant</h4>
+                <p>Rs 500</p>
+        
+            </div>
+            <div class="column-3">
+                <img src="images/new3.jpg" alt="third new product">
+                <h4>Fern Plant</h4>
+                <p>Rs 399</p>
+        
+            </div>
+            <div class="column-3">
+                <img src="images/new4.jpg" alt="fourth new product">
+                <h4>Apricot Bonsai</h4>
+                <p>Rs 999</p>
+        
+            </div>
+            <div class="row">
+                <div class="column-3">
+                    <img src="images/featured1.jpg" alt="first featured product">
+                    <h4>Green Ficus Bonsai</h4>
+                    <p>Rs 200</p>
+            
+                </div>
+                <div class="column-3">
+                    <img src="images/featured2.jpg" alt="second featured product">
+                    <h4>Green Paradise</h4>
+                    <p>Rs 600</p>
+            
+                </div>
+                <div class="column-3">
+                    <img src="images/featured3.jpg" alt="third featured product">
+                    <h4>Banyan Bonsai Tree</h4>
+                    <p>Rs 32000</p>
+            
+                </div>
+                <div class="column-3">
+                    <img src="images/featured4.jpg" alt="fourth featured product">
+                    <h4>Chinese Orange Plant</h4>
+                    <p>Rs 99</p>
+                </div>
+            
+    </div>    
+            
+
+        <footer>
+            <p>@copyright BonsaiNation 2022- All Right Reserved.</p>
+        
+        </footer>
+
+        <script type="text/javascript">
+            var images = ['images/a.jpg', 'images/b.jpg', 'images/c.jpg', 'images/homepic.jpg'];
+            var x = 0;
+            var imgs = document.getElementById('img');
+            //The setInterval() calls a function at theintervals (in milliseconds). 
+            setInterval(slider, 2000);
+            function slider(){
+                if (x<images.length){
+                    x = x+1;
+                }
+                else{
+                    x=1;
+                }
+                imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+            }
+
+
+
+
+        </script>
+
+
+
+
+
+    </body>
+
+
+
+
+</html>

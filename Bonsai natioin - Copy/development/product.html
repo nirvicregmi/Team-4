@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Page</title>
+
+    <meta name="decription" content="BonsaiNation Home Page">
+    <meta name="keywords" content="Bonsai Plant, Ecommerce Website">
+    <meta name="author" content="">
+	  <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <style type="text/css">
+    	.img-container{
+        background-image: url(images/bg.jpg);
+        background-size: cover;
+        position: relative;
+        height: 800px;
+
+      }
+
+      .text{
+        background-color: #e6f2e9;
+        color: black;
+        font-size: 10vw; 
+        margin: 0 auto;
+        padding: 15px;
+        width: 60%;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: screen;
+
+
+
+      }
+    	
+    	
+
+    		
+
+    	
+    	button{
+      	border: none;
+  			outline: 0;
+  			padding: 12px;
+  			color: white;
+  			background-color: #000;
+  			text-align: center;
+  			cursor: pointer;
+  			width: 100%;
+  			font-size: 18px;
+      }
+    	button:hover {
+    		opacity: 0.7;	
+    	}
+    	.row{
+    		display: flex;
+    	}
+    	.firstcolumn{
+    		flex: 30%;
+    		background-color: #f7efed;
+    		margin: 20px;
+    		
+    	}
+    	.secondcolumn{
+    		flex: 30%;
+    		background-color: #f7efed;
+    		
+    		margin: 20px;
+    	}
+    	.thirdcolumn{
+    		flex: 30%;
+    		background-color: #f7efed;
+    		margin: 20px;
+    	}
+    	h2{
+    		text-align: center;
+    	}
+      .pro{
+        text-align: center;
+        font-family: Courier New;
+      }
+    	
+
+		
+	
+
+    	
+
+
+    </style>
+</head>
+<body>
+	
+	<div class="header">
+            <div class="box">
+                <div class="navbar">
+                    <div class="icon">
+                        <a href="index.html"><img src="images/logo.jpeg" alt="Website logo" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">References</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+  	</div>
+
+  	<h1 style="text-align: center">Our Products</h1><br><br>
+    <div class="img-container">
+      <div class="text">
+        OUR PRODUCTS
+      </div>
+    </div><br><br>
+
+    <h2 id="greet" class="pro"></h3><br><br><br>
+    <h2 class="pro">Please Check Our Products</h2>
+
+  	<div class="row">
+  		<div class="firstcolumn">
+  			<img src="images/featured3.jpg" width="100%" height="300px">
+  			<h2>Banyan Bonsai</h2>
+  			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br>
+  			<p style="font-size: 22px; text-align: center;" ><del>Rs 8000</del><p style="text-align: center;">Rs 7000</p></p>
+  			<p><button onsubmit="cart()">Add to Cart</button></p>
+  		</div>
+  		<div class="secondcolumn">
+  			<img src="images/juniper.jpg" width="100%" height="300px">
+  			<h2>Juniper Bonsai</h2>
+  			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br><br>
+  			<p style="font-size: 22px; text-align: center;" >Rs 800</p>
+  			<p><button onsubmit="cart()">Add to Cart</button></p>
+  		</div>
+  		<div class="thirdcolumn">
+  			<img src="images/oak.webp" width="100%" height="300px">
+  			<h2>Oak Bonsai</h2>
+  			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br>
+  			<p style="font-size: 22px; text-align: center;" ><del>Rs 8000</del><p style="text-align: center;">Rs 2000</p></p>
+  			<p><button onsubmit="cart()">Add to Cart</button></p>
+  		</div>
+
+  		<div class="firstcolumn">
+  			<img src="images/moss.webp" width="100%" height="300px">
+  			<h2>Moss Bonsai</h2>
+  			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br>
+  			<p style="font-size: 22px; text-align: center;" ><del>Rs 4000</del><p style="text-align: center;">Rs 3800</p></p>
+  			<p><button onsubmit="cart()">Add to Cart</button></p>
+  		</div>
+
+  		<div class="secondcolumn">
+  			<img src="imageskamini.jpg" width="100%" height="300px">
+  			<h2>Kamini Bonsai</h2>
+  			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br><br>
+  			<p style="font-size: 22px; text-align: center;" >Rs 750</p>
+  			<p><button onsubmit="cart()">Add to Cart</button></p>
+  		</div>
+
+  		<div class="thirdcolumn">
+  			<img src="images/lemon.jpg" width="100%" height="300px">
+  			<h2>Lemon Bonsai</h2>
+  			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br><br>
+  			<p style="font-size: 22px; text-align: center;" >Rs 1700</p>
+  			<p><button onsubmit="cart()">Add to Cart</button></p>
+  		</div>
+  	</div>
+
+    <script type="text/javascript">
+      const time = new Date().getHours();
+      let greeting;
+      if (time < 10) {
+        greeting = "Good Morning!";
+      }
+      else if (time < 20) {
+        greeting = "Good Day!";
+      } 
+      else{
+        greeting = "Good evening!";
+      }
+      document.getElementById("greet").innerHTML = greeting;
+
+
+
+
+    </script>
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+  	
+</body>
+</html>

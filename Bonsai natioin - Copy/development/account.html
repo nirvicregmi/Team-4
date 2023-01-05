@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account</title>
+	<meta name="description" content="Account in Bonsai Nation">
+	<meta name="keywords" content="Bonsai Nation, Account, Plant, Ecommerce Website">
+	<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <style type="text/css">
+    
+    	
+    </style>
+</head>
+<body>
+
+	<!--Navigation bar-->
+
+	<div class="header">
+            <div class="box">
+                <div class="navbar">
+                    <div class="icon">
+                        <a href="index.html"><img src="images/logo.jpeg" alt="Website logo" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">References</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+  	</div>
+  	<br><br>
+  	<h3 style="color: #555" text align="center">Welcome To Bonsai Nation! Please Login.</h3><br>
+  	<div class="one">
+	  	<form onsubmit="FormValidate()" name="account">
+	  		Email: <br>
+	  		<input type="Email" name="email" placeholder="domainname@gmail.com"> <br><br>
+	  		Password: <br>
+	  		 <input type="Password" name="password"><br><br>
+	  		 <input type="submit" name="Submit"><br><br>
+	  		
+
+	  	</form>
+	</div>
+	<br>
+	<div align="center">	
+	 Not registered yet? <a href="register.html" style="color: green">Register</a> here
+	</div>
+
+	<!--Form Validation-->
+
+	<script type="text/javascript">
+		function FormValidate() 
+		{
+			var email = document.forms["account"] ["email"].value;
+			var pass = document.forms["account"] ["password"].value;
+			if (email == "" ||  pass == "") 
+			{
+				alert("Please fill the form completely.");
+			}
+			else
+			{
+				alert("Logged in.");
+			}
+		}
+
+
+
+	</script>
+</body>
+</html>

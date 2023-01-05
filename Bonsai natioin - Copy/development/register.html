@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account Registration</title>
+	<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+            <div class="box">
+                <div class="navbar">
+                    <div class="icon">
+                        <a href="index.html"><img src="images/logo.jpeg" alt="Website logo" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">References</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+  	</div>
+  	<br><br>
+  	<h3 style="color: #555" text align="center">CREATE YOUR ACCOUNT</h3><br>
+  	<div class="one">
+	  	<form onsubmit="Validation()" name="register">
+	  		First Name <br>
+	  		<input type="text" name="fname"><br><br>
+	  		Last Name <br>
+	  		 <input type="text" name="lname"><br><br>
+	  		Email <br>
+	  		<input type="Email" name="email" placeholder="domainname@gmail.com"><br><br>
+	  		Password <br>
+	  		<input type="Password" name="password"><br><br>
+	  		Phone Number <br>
+	  		<select>
+	  			<option value="+977">+977</option>
+	  			<option value="+91">+91</option>
+	  		</select>
+	  		<input type="tel" name="phonenumber"><br><br>
+	  		
+	  		Gender: <input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female <br>   <br>
+
+	  		<input type="submit" name="Create Account"><br><br>
+
+
+
+	  	</form>
+	</div>
+	<br><br>
+	<section style="text-align: center;">Already have an account? Go <a href="account.html" style="color: green">back</a></section>
+
+	<!--Form Validation-->
+
+	<script type="text/javascript">
+		function Validation() 
+		{
+			var fname = document.forms["register"] ["fname"].value;
+			var lname = document.forms["register"] ["lname"].value;
+			var email = document.forms["register"] ["email"].value;
+			var pass = document.forms["register"] ["password"].value;
+			var phonenumber = document.forms["register"] ["phonenumber"].value;
+
+			if (fname == "" || lname == "" || email == "" || pass == "" || phonenumber == "") 
+			{
+				alert("Please fill the form completely.");
+			}
+			else
+			{
+				alert("Thank you for registering.");
+			}
+		}
+
+
+
+	</script>
+
+</body>
+</html>
