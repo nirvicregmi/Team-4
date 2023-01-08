@@ -124,6 +124,28 @@
                 background-size: cover;
                 background-attachment: fixed;
             }
+
+            /*styling discount offer*/
+            .coupon {
+                border: 5px dotted red;
+                width: 80%;
+                border-radius: 15px;
+                margin: 0; /*Putting coupon on center*/
+                max-width: 600px;
+                background-color: radial-gradient(#fff,#ffd6d6);
+                padding-bottom: 10px;
+                
+            }
+
+            .container{
+                padding: 2px 16px;
+                background-color: #f1f1f1;
+
+            }
+
+            .expire {
+                color: red;
+            }
             
            
         </style>
@@ -145,8 +167,9 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="product.html">Products</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="">Research</a></li>
                             <li><a href="">About Us</a></li>
-                            <li><a href="">References</a></li>
                             <li><a href="account.html">Account</a></li>
                         </ul>
                     </nav>
@@ -283,9 +306,24 @@
                         <h4>Chinese Orange Plant</h4>
                         <p>Rs 99</p>
                     </div>
+
+                    <div class="coupon">
+                        <div class="container">
+                            <h3 style="text-align: center;">JUNIPER BONSAI</h3>
+                        </div>
+                        <img src="images/juniper.jpg" width="100%" alt="discount juniper bonsai">
+                        <div class="container">
+                            <h2 style="text-align: center;"><b>20% OFF! <br> ORDER NOW!</b></h2><br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quasi iure praesentium. Fugiat nam illum exercitationem quia earum laudantium amet accusamus quaerat numquam sint, incidunt dignissimos suscipit, eius at mollitia.</p>
+                        </div>
+                        <div class="container">
+                            <p class="expire">Valid until: Feb 08, 2023</p>
+                        </div>
+                    </div>
+
                 
         </div>    
-</div>    
+</div>  <br>  
         <!--Footer tag-->
         <footer>
             <p>@copyright BonsaiNation 2022- All Right Reserved.</p>

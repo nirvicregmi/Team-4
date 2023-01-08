@@ -7,7 +7,79 @@
 	<link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
     <style type="text/css">
-    
+
+	/*Button which opens feedback form*/
+		.open-button {
+		background-color: green;
+		color: white;
+		padding: 16px 17px;
+		border-radius: 25px;
+		opacity: 0.9;
+		position: fixed;
+		bottom: 23px;
+		right: 28px;
+		width: 200px;
+	  }
+
+	  /*Popup. After the feedback button is clicked*/
+	  .form-popup {
+		background-color: grey;
+		display: none;
+		position: fixed;
+		bottom: 0;
+		right: 15px;
+		border: 3px solid #f1f1f1;
+		
+
+	  }
+
+	  .form-block {
+		max-width: 300px;
+		padding: 10px;
+		background-color: white
+		
+	  }
+
+	  /*For full-width input field (email) only */
+	  .form-block input[type=text] {
+		width: 100%;
+		padding: 15px;
+		margin: 5px 0 22px 0;
+		border: none;
+		background: #f1f1f1;
+	  }
+
+	   /*For full-width input field (feedback) only */
+	  textarea {
+		width: 100%;
+		padding: 15px;
+		margin: 5px 0 22px 0;
+		border: none;
+		background: #f1f1f1;
+	  }
+
+	  /*Styling submit button of feedback form*/
+	  .form-block .btn {
+		background-color: #04AA6D;
+		color: white;
+		padding: 16px 20px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		margin-bottom:10px;
+		opacity: 0.8;
+	  }
+
+	  /*Styling cancel button*/
+	  .form-block .cancel {
+		background-color: red;
+	  }
+
+	  /*Hover effects on button of feedback form*/
+	  .form-block .btn:hover, .open-button:hover {
+		opacity: 1;
+	  }
+
     	
     </style>
 </head>
@@ -25,8 +97,9 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="product.html">Products</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="">Research</a></li>
                             <li><a href="">About Us</a></li>
-                            <li><a href="">References</a></li>
                             <li><a href="account.html">Account</a></li>
                         </ul>
                     </nav>
@@ -53,9 +126,27 @@
 	 Not registered yet? <a href="register.html" style="color: green">Register</a> here
 	</div>
 
-	<!--Form Validation-->
+	<!--Popup Form-->
+	<button class="open-button" onclick="openform()">Feedback</button>
+	<div class="form-popup" id="myForm">
+		<form class="form-block"></form>
+			<h1>Feedback</h1>
+			
+			<label><b>Email</b></label>
+			<input type="text" placeholder="Enter Email" name="email" required>
+
+			<label><b>Feedback</b></label>
+			<textarea rows="4" cols="10" placeholder="Feedback..." name="feedback" required></textarea>
+
+			<button type="submit" class="btn">Submit</button>
+			<button type="button" class="btn close" onclick="closeform()">Close</button>
+		</form>
+	</div>
+
+	
 
 	<script type="text/javascript">
+		<!--Form Validation-->
 		function FormValidate() 
 		{
 			var email = document.forms["account"] ["email"].value;
@@ -69,6 +160,15 @@
 				alert("Logged in.");
 			}
 		}
+
+		/*Popup Form*/
+		function openform() {
+		document.getElementById("myForm").style.display = "block";
+	  }
+
+	  function closeform() {
+		document.getElementById("myForm").style.display = "none";
+	  }
 
 
 

@@ -113,75 +113,18 @@
 		color: white;
 	  }
 
-	  /*Button which opens feedback form*/
-	  .open-button {
-		background-color: green;
-		color: white;
-		padding: 16px 17px;
-		border-radius: 25px;
-		opacity: 0.9;
-		position: fixed;
-		bottom: 23px;
-		right: 28px;
-		width: 200px;
+	  .zoom {
+		transition: transform .8s;
+		
 	  }
 
-	  /*Popup. After the feedback button is clicked*/
-	  .form-popup {
-		display: none;
-		position: fixed;
-		bottom: 0;
-		right: 15px;
-		border: 3px solid #f1f1f1;
+	  .zoom:hover {
+		-ms-transform: scale(1.5); /* IE 9 */
+		-webkit-transform: scale(1.5); /* Safari 3-8 */
+		transform: scale(1.15); 
+	 }
 
-	  }
-
-	  .form-block {
-		max-width: 300px;
-		padding: 10px;
-		background-color: white;
-	  }
-
-	  /*For full-width input field (email) only */
-	  .form-block input[type=text] {
-		width: 100%;
-		padding: 15px;
-		margin: 5px 0 22px 0;
-		border: none;
-		background: #f1f1f1;
-	  }
-
-	   /*For full-width input field (feedback) only */
-	  textarea {
-		width: 100%;
-		padding: 15px;
-		margin: 5px 0 22px 0;
-		border: none;
-		background: #f1f1f1;
-	  }
-
-	  /*Styling submit button of feedback form*/
-	  .form-block .btn {
-		background-color: #04AA6D;
-		color: white;
-		padding: 16px 20px;
-		border: none;
-		cursor: pointer;
-		width: 100%;
-		margin-bottom:10px;
-		opacity: 0.8;
-	  }
-
-	  /*Styling cancel button*/
-	  .form-block .cancel {
-		background-color: red;
-	  }
-
-	  /*Hover effects on button of feedback form*/
-	  .form-block .btn:hover, .open-button:hover {
-		opacity: 1;
-	  }
-
+	  
 
     	
 
@@ -204,9 +147,10 @@
                     <nav>
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="">Products</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="">Research</a></li>
                             <li><a href="">About Us</a></li>
-                            <li><a href="">References</a></li>
                             <li><a href="account.html">Account</a></li>
                         </ul>
                     </nav>
@@ -232,22 +176,9 @@
 
     <h2 id="greet" class="pro"></h3><br><br><br> 
 
-	<button class="open-button" onclick="openform()">Feedback</button>
 	
-	<div class="form-popup" id="myForm">
-		<form class="form-block"></form>
-			<h1>Feedback</h1>
-			
-			<label><b>Email</b></label>
-			<input type="text" placeholder="Enter Email" name="email" required>
-
-			<label><b>Feedback</b></label>
-			<textarea rows="4" cols="10" placeholder="Feedback..." name="feedback" required></textarea>
-
-			<button type="submit" class="btn">Submit</button>
-			<button type="button" class="btn close" onclick="closeform()">Close</button>
-		</form>
-	</div>
+	
+	
 
 
 		
@@ -256,21 +187,30 @@
 
   	<div class="row">
   		<div class="firstcolumn">
-  			<img src="images/featured3.jpg" width="100%" height="300px">
+			<div class="zoom">
+				<img src="images/featured3.jpg" width="100%" height="300px">
+			</div>
   			<h2>Banyan Bonsai</h2>
+			
   			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br>
   			<p style="font-size: 22px; text-align: center;" ><del>Rs 8000</del><p style="text-align: center;">Rs 7000</p></p>
   			<p><button onsubmit="cart()">Add to Cart</button></p>
   		</div>
   		<div class="secondcolumn">
-  			<img src="images/juniper.jpg" width="100%" height="300px">
+			<div class="zoom">
+				<img src="images/juniper.jpg" width="100%" height="300px">
+			</div>
+  			
   			<h2>Juniper Bonsai</h2>
   			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br><br>
   			<p style="font-size: 22px; text-align: center;" >Rs 800</p>
   			<p><button onsubmit="cart()">Add to Cart</button></p>
   		</div>
   		<div class="thirdcolumn">
-  			<img src="images/oak.webp" width="100%" height="300px">
+			<div class="zoom">
+				<img src="images/oak.webp" width="100%" height="300px">
+			</div>
+  			
   			<h2>Oak Bonsai</h2>
   			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br>
   			<p style="font-size: 22px; text-align: center;" ><del>Rs 8000</del><p style="text-align: center;">Rs 2000</p></p>
@@ -278,7 +218,10 @@
   		</div>
 
   		<div class="firstcolumn">
-  			<img src="images/moss.webp" width="100%" height="300px">
+			<div class="zoom">
+				<img src="images/moss.webp" width="100%" height="300px">
+			</div>
+  			
   			<h2>Moss Bonsai</h2>
   			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br>
   			<p style="font-size: 22px; text-align: center;" ><del>Rs 4000</del><p style="text-align: center;">Rs 3800</p></p>
@@ -286,7 +229,10 @@
   		</div>
 
   		<div class="secondcolumn">
-  			<img src="imageskamini.jpg" width="100%" height="300px">
+			<div class="zoom">
+				<img src="imageskamini.jpg" width="100%" height="300px">
+			</div>
+  			
   			<h2>Kamini Bonsai</h2>
   			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br><br>
   			<p style="font-size: 22px; text-align: center;" >Rs 750</p>
@@ -294,7 +240,10 @@
   		</div>
 
   		<div class="thirdcolumn">
-  			<img src="images/lemon.jpg" width="100%" height="300px">
+			<div class="zoom">
+				<img src="images/lemon.jpg" width="100%" height="300px">
+			</div>
+  			
   			<h2>Lemon Bonsai</h2>
   			<p>Banyan Bonsai gives your environment a greeny look and make your environment fresh and healthy feeling.</p><br><br>
   			<p style="font-size: 22px; text-align: center;" >Rs 1700</p>
@@ -321,13 +270,7 @@
 		alert("Nothing at the moment. Check again later");
 	  }
 
-	  function openform() {
-		document.getElementById("myForm").style.display = "block";
-	  }
-
-	  function closeform() {
-		document.getElementById("myForm").style.display = "none";
-	  }
+	  
 
 
 
