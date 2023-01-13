@@ -66,14 +66,13 @@ a{
      margin: auto;
      padding: 20px;
  }
- footer{
-    text-align: center;
-    padding: 3px;
-    background-color: lightgreen;
-    color: white;
-    bottom: 0;
-
- }
+ 
+ /*Footer*/
+ .footer{
+    padding: 20px;
+    margin-top: 20px;
+    background: lightgreen;
+}
  .row{
     display: flex;
     align-items: center;
