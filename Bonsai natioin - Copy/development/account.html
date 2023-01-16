@@ -5,158 +5,83 @@
 	<meta name="description" content="Account in Bonsai Nation">
 	<meta name="keywords" content="Bonsai Nation, Account, Plant, Ecommerce Website">
 	<link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
     <style type="text/css">
-
-	/*Button which opens feedback form*/
-		.open-button {
-		background-color: green;
-		color: white;
-		padding: 16px 17px;
-		border-radius: 25px;
-		opacity: 0.9;
-		position: fixed;
-		bottom: 23px;
-		right: 28px;
-		width: 200px;
-	  }
-
-	  /*Popup. After the feedback button is clicked*/
-	  .form-popup {
-		background-color: grey;
-		display: none;
-		position: fixed;
-		bottom: 0;
-		right: 15px;
-		border: 3px solid #f1f1f1;
-		
-
-	  }
-
-	  .form-block {
-		max-width: 300px;
-		padding: 10px;
-		background-color: white
-		
-	  }
-
-	  /*For full-width input field (email) only */
-	  .form-block input[type=text] {
-		width: 100%;
-		padding: 15px;
-		margin: 5px 0 22px 0;
-		border: none;
-		background: #f1f1f1;
-	  }
-
-	   /*For full-width input field (feedback) only */
-	  textarea {
-		width: 100%;
-		padding: 15px;
-		margin: 5px 0 22px 0;
-		border: none;
-		background: #f1f1f1;
-	  }
-
-	  /*Styling submit button of feedback form*/
-	  .form-block .btn {
-		background-color: #04AA6D;
-		color: white;
-		padding: 16px 20px;
-		border: none;
-		cursor: pointer;
-		width: 100%;
-		margin-bottom:10px;
-		opacity: 0.8;
-	  }
-
-	  /*Styling cancel button*/
-	  .form-block .cancel {
-		background-color: red;
-	  }
-
-	  /*Hover effects on button of feedback form*/
-	  .form-block .btn:hover, .open-button:hover {
-		opacity: 1;
-	  }
-
+	
     	
     </style>
 </head>
-<body>
-
-	<!--Navigation bar-->
-
-	<div class="header">
-            <div class="box">
-                <div class="navbar">
-                    <div class="icon">
-                        <a href="index.html"><img src="images/logo.jpeg" alt="Website logo" width="125px"></a>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="product.html">Products</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="">Research</a></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="account.html">Account</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-  	</div>
-  	<br><br>
-	
-	
-  	<h3 style="color: #555" text align="center">Welcome To Bonsai Nation! Please Login.</h3><br>
-  	<div class="one">
-	  	<form onsubmit="FormValidate()" name="account">
-	  		Email: <br>
-	  		<input type="Email" name="email" placeholder="domainname@gmail.com"> <br><br>
-	  		Password: <br>
-	  		 <input type="Password" name="password"><br><br>
-	  		 <input type="submit" name="Submit"><br><br>
-	  		
-
-	  	</form>
-	</div>
-	<br>
-	<div align="center">	
-	 Not registered yet? <a href="register.html" style="color: green">Register</a> here
-	</div>
-
-	
-
-	 <!--Footer tag-->
-	 <div class="footer">
-		<a href="#"><h4>About Us</h4></a>
-		<marquee><p>@copyright BonsaiNation 2023- All Right Reserved.</p></marquee>
+	<body>
+		<!--Navigation bar-->
+		<div class="header">
+				<div class="box">
+					<div class="navbar">
+						<div class="icon">
+							<a href="index.html"><img src="images/logo.jpeg" alt="Website logo" width="125px"></a>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="product.html">Products</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="">Research</a></li>
+								<li><a href="">About Us</a></li>
+								<li><a href="account.html">Account</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+		</div>
+		<br><br> <!--Line Break-->
 		
-	</div>
+		
+		<h3 style="color: #555" text align="center">Welcome To Bonsai Nation! Please Login.</h3><br>
+		<div class="one">
+			<form onsubmit="FormValidate()" name="account">
+				Email: <br>
+				<input type="Email" name="email" placeholder="domainname@gmail.com"> <br><br>
+				Password: <br>
+				<input type="Password" name="password"><br><br>
+				<input type="submit" name="Submit"><br><br>
+			</form>
+		</div>
 
-	
+		<br>
 
-	<script type="text/javascript">
-		<!--Form Validation-->
-		function FormValidate() 
-		{
-			var email = document.forms["account"] ["email"].value;
-			var pass = document.forms["account"] ["password"].value;
-			if (email == "" ||  pass == "") 
-			{
-				alert("Please fill the form completely.");
-			}
-			else
-			{
-				alert("Logged in.");
-			}
-		}
+		<div align="center">	
+			Not registered yet? <a href="register.html" style="color: green">Register</a> here
+		</div>
 
 		
 
+		<!--Footer tag-->
+		<div class="footer">
+			<a href="#"><h4>About Us</h4></a>
+			<marquee><p>@copyright BonsaiNation 2023- All Right Reserved.</p></marquee>
+			
+		</div>
+
+		
+
+		<script type="text/javascript">
+			<!--Form Validation-->
+			function FormValidate() 
+			{
+				var email = document.forms["account"] ["email"].value;
+				var pass = document.forms["account"] ["password"].value;
+				if (email == "" ||  pass == "") 
+				{
+					alert("Please fill the form completely.");
+				}
+				else
+				{
+					alert("Logged in.");
+				}
+			}
+
+			
 
 
-	</script>
-</body>
+
+		</script>
+	</body>
 </html>
